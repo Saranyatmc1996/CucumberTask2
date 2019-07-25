@@ -66,6 +66,7 @@ public class CheckCustomerID {
 		WebElement cusId = driver.findElement(By.xpath("//td[@align='center']//h3"));
 		String text = cusId.getAttribute("value");
 		System.out.println(text);
+		driver.quit();
 	}
 
 }

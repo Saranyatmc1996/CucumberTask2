@@ -49,6 +49,7 @@ public class AddTariffClass {
 	public void user_should_see_the_successfully_compeletion_page() throws InterruptedException {
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//a[@class='button']")).click();
+	driver.quit();
 	}
 
 
