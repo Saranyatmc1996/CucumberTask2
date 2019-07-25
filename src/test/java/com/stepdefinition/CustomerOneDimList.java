@@ -47,7 +47,7 @@ public class CustomerOneDimList {
 
 	@Then("user should see the customer id is generated or not.")
 	public void user_should_see_the_customer_id_is_generated_or_not() {
-		Assert.assertTrue(driver.findElement(By.xpath("//td[@align='center']//h3")).isDisplayed());
+		//Assert.assertTrue(driver.findElement(By.xpath("//td[@align='center']//h3")).isDisplayed());
 		WebElement cusId = driver.findElement(By.xpath("//td[@align='center']//h3"));
 		String text = cusId.getAttribute("value");
 		System.out.println(text);
