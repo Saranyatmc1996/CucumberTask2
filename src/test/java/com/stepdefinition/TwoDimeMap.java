@@ -50,7 +50,7 @@ public class TwoDimeMap {
 	public void user_should_see_the_successfully_completed_page() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[@class='button']")).click();
-		driver.quit();
+		
 	}
 
 
