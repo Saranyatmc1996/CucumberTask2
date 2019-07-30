@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 
 public class TwoDimeMap {
 	static WebDriver driver;
@@ -32,7 +33,7 @@ public class TwoDimeMap {
 	}
 
 	@When("user need to fill all the personal details")
-	public void user_need_to_fill_all_the_personal_details(io.cucumber.datatable.DataTable cusDetails) {
+	public void user_need_to_fill_all_the_personal_details(DataTable cusDetails) {
 		List<Map<String, String>> cusMap = cusDetails.asMaps(String.class,String.class);
 		
 		driver.findElement(By.xpath("//label[@for='done']")).click();
